@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Task List Styles */
+  .task-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Task Styles */
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .task:last-child {
+    border-bottom: none;
+  }
+  
+  .task h3 {
+    margin: 0;
+    font-size: 18px;
+    flex-grow: 1;
+  }
+  
+  .task .task-buttons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .task .task-buttons button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task .task-buttons button.done {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .task .task-buttons button.delete {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .task .task-buttons button.done:hover,
+  .task .task-buttons button.delete:hover {
+    opacity: 0.8;
+  }
+  
+  .task .task-details {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .task .task-details p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .task .task-details small {
+    color: #999;
+  }
+  
+  /* Expandable Task Styles */
+  .task.expanded .task-details {
+    display: flex;
+  }
+  
+  /* Task Form Styles */
+  .task-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+  }
+  
+  .task-form button {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .task-form button:hover {
+    background-color: #0056b3;
+  }
+  
